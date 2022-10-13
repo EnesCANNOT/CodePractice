@@ -23,6 +23,7 @@ fun birthday(s: Array<Int>, d: Int, m: Int): Int {
 }
  */
 
+/*
 fun birthday(s: Array<Int>, d: Int, m: Int): Int {
     var counter = 0
     for (start in 0..s.size - m){
@@ -32,3 +33,6 @@ fun birthday(s: Array<Int>, d: Int, m: Int): Int {
 
     return counter
 }
+ */
+
+fun birthday(s: Array<Int>, d: Int, m: Int): Int = (0..s.size - m).count { s.copyOfRange(it, it + m).sum()  == d}
