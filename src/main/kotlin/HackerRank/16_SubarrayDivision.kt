@@ -5,6 +5,7 @@ fun main() {
     println(birthday(s, 3, 2))
 }
 
+/*
 fun birthday(s: Array<Int>, d: Int, m: Int): Int {
     var count = 0
     for (i in (0..s.size - m)){
@@ -19,4 +20,15 @@ fun birthday(s: Array<Int>, d: Int, m: Int): Int {
     }
 
     return count
+}
+ */
+
+fun birthday(s: Array<Int>, d: Int, m: Int): Int {
+    var counter = 0
+    for (start in 0..s.size - m){
+        if (s.copyOfRange(start, start + m).sum() == d)
+            counter++
+    }
+
+    return counter
 }
