@@ -3,13 +3,14 @@ package ProjectEuler
 import java.text.SimpleDateFormat
 import java.util.*
 
-fun main() {
-    val result = largestPrimeFactor(600851475143)
+private fun main() {
+    val number = 600851475143
+    val result = largestPrimeFactor(number)
     println(result)
     getCurrentDate()
 }
 
-fun largestPrimeFactor(number: Long): Long{
+private fun largestPrimeFactor(number: Long): Long{
     val arr = arrayListOf<Long>()
 
     for (prime in (2..number/2)){
@@ -25,7 +26,7 @@ fun largestPrimeFactor(number: Long): Long{
     return arr.last()
 }
 
-fun isPrime(num: Long): Boolean{
+private fun isPrime(num: Long): Boolean{
     if(num < 2)
         return false
     for (i in (2..num/2)){
@@ -37,7 +38,7 @@ fun isPrime(num: Long): Boolean{
     return true
 }
 
-fun getCurrentDate(){
+private fun getCurrentDate(){
     val sdf = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
     println(sdf.format(Date()))
 }

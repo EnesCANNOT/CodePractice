@@ -1,10 +1,11 @@
 package ProjectEuler
 
-fun main() {
-    println(evenFibonacciNumbers(4000000))
+private fun main() {
+    val limit = 4000000
+    println(evenFibonacciNumbers(limit))
 }
 
-fun evenFibonacciNumbers(limit: Int): Long{
+private fun evenFibonacciNumbers(limit: Int): Long{
     var num1 = 0
     var num2 = 1
     var result: Long = 0

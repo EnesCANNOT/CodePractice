@@ -2,11 +2,12 @@ package ProjectEuler
 
 import kotlin.math.max
 
-fun main() {
-    println(largestPalindromeProduct(3))
+private fun main() {
+    val digit = 3
+    println(largestPalindromeProduct(digit))
 }
 
-fun largestPalindromeProduct(digit: Int): Int{
+private fun largestPalindromeProduct(digit: Int): Int{
     val maxLimit = "9".repeat(digit).toInt()
     val minLimit = ("1" + "0".repeat(digit - 1)).toInt()
     var result = 1
@@ -21,4 +22,4 @@ fun largestPalindromeProduct(digit: Int): Int{
     return result
 }
 
-fun isPalindrome(number: Int): Boolean = (number.toString() == number.toString().reversed())
+private fun isPalindrome(number: Int): Boolean = (number.toString() == number.toString().reversed())

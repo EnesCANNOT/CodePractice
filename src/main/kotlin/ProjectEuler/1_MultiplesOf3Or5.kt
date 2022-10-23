@@ -1,10 +1,10 @@
 package ProjectEuler
 
-fun main() {
+private fun main() {
     println(multiplesOfThreeOrFive())
 }
 
-fun multiplesOfThreeOrFive(): Long{
+private fun multiplesOfThreeOrFive(): Long{
     val number1 = 3
     val number2 = 5
     val smallestValue = 1
