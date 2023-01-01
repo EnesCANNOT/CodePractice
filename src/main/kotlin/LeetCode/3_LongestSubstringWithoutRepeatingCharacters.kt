@@ -1,7 +1,7 @@
 package LeetCode
 
 fun main(){
-    println(lengthOfLongestSubstring(" "))
+    println(lengthOfLongestSubstring(""))
 }
 
 fun lengthOfLongestSubstring(s: String): Int {
