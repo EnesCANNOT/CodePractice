@@ -5,7 +5,8 @@ fun main() {
         arrayOf(6, 4, 2)
     )
 
-    println("Minimum cost to form a magic square: ${formingMagicSquare(inputMatrix)}")
+    val result = formingMagicSquare(inputMatrix)
+    println("Minimum cost to form a magic square: $result")
 }
 
 fun formingMagicSquare(s: Array<Array<Int>>): Int {
